@@ -48,6 +48,11 @@ module.exports = function (directory) {
 
 					on('data', function (buffer) {
 						res.write(buffer);
+					}).
+
+					on('end', function (){
+						stream.destroy();
+						res.end();
 					})
 				;
 			},
