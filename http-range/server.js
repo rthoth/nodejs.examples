@@ -14,7 +14,7 @@ var server = express();
 
 server.
 	use(cors({
-		headers: ['Accept-Ranges', 'Content-length', 'Content-type', 'Content-Range', 'Date']
+		headers: ['Accept-Ranges', 'Content-length', 'Content-type', 'Content-Range', 'Date', 'Range']
 	})).
 	set('port', 8081).
 	set('data_dir', __dirname + '/data')
