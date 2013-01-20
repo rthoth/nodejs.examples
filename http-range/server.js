@@ -13,6 +13,7 @@ var express = require('express'),
 var server = express();
 
 server.
+	use(cors()).
 	set('port', 8081).
 	set('data_dir', __dirname + '/data')
 ;
